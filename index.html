@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2399b89d79.js" crossorigin="anonymous"></script>
+    <title>Agiledrop - O podjetju</title>
+</head>
+<body class="font-primary text-primary">
+
+    <nav class="flex border-b sm:px-4">
+        <div class="container flex flex-wrap justify-between items-center mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <img src="/src/images/agiledrop-logo.png" width="178" height="32" alt="Agiledrop Logo">
+            </a>
+
+            <div class="flex lg:hidden lg:order-2">                
+                <button data-collapse-toggle="mobile-menu" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-black rounded-lg lg:hidden focus:outline-none focus:ring-1 focus:ring-agiledrop"
+                    aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu">
+                <ul class="flex flex-col mt-4 lg:flex-row lg:items-center lg:space-x-8 lg:mt-0 font-semibold">
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdown-1" class="flex items-center py-2 pr-4 pl-3 w-full font-semibold hover:text-agiledrop lg:p-0 lg:w-auto">Drupal <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <div id="dropdown-1" class="hidden transform-none z-10 w-44 list-none bg-white shadow">
+                            <ul class="py-1 font-medium text-sm" aria-labelledby="dropdownLargeButton">
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Drupal vodiči</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Drupal tečaji</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdown-2" class="flex items-center py-2 pr-4 pl-3 w-full font-semibold hover:text-agiledrop lg:p-0 lg:w-auto">Podjetje <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <div id="dropdown-2" class="hidden z-10 w-44 list-none bg-white shadow ">
+                            <ul class="py-1 font-medium text-sm" aria-labelledby="dropdownLargeButton">
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">O podjetju</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Zgodovina</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Ekipa</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Spoznaj nas</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Naročniki</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdown-3" class="flex items-center py-2 pr-4 pl-3 w-full lg:p-0 lg:w-auto font-semibold hover:text-agiledrop">Zaposlitev <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                        <div id="dropdown-3" class="hidden z-10 w-64 list-none bg-white shadow ">
+                            <ul class="py-1 font-medium text-sm" aria-labelledby="dropdownLargeButton">
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Zaposlimo razvijalce</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Ugodnosti za zaposlene</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Poklicna pot razvijalcev</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Uvajanje in mentorstvo</a></li>
+                                <li><a href="#" class="block py-3 px-8 hover:text-agiledrop">Izobraževanje zaposlenih</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="flex items-center py-2 pr-4 pl-3 w-full lg:border-0 lg:p-0 lg:w-auto hover:text-agiledrop ">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="block my-6 group w-fit">
+                    <button type="button" class="lg:hidden items-center pr-4 pl-3 border px-5 py-3 font-semibold hover:shadow-lg border-agiledrop hover:text-agiledrop ">Pridruži se nam <i class="fa-solid fa-chevron-right pl-1 text-agiledrop group-hover:translate-x-1 ease-out duration-200"></i></button>
+                </div> 
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:flex items-center py-2 pr-4 pl-3 group w-full lg:p-0 lg:w-auto order-3">
+                <button type="button" class="border px-5 py-3 font-semibold hover:shadow-lg border-agiledrop hover:text-agiledrop ">Pridruži se nam <i class="fa-solid fa-chevron-right pl-1 text-agiledrop group-hover:translate-x-1 ease-out duration-200"></i></button>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+
+
+
+
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- About Company -->
+        <div class="border-b">
+            <div class="text-center lg:flex container mx-auto py-40 prose-base lg:prose-lg">
+                <h1 class="font-bold">O podjetju</h1>
+            </div>
+        </div>
+
+        <!-- Video -->
+        <div>
+            <div class="container grid grid-cols-1 lg:grid-cols-2 mx-auto py-16 justify-center items-center">
+                <div class="flex p-7 ">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/tP2AMmrnRZ4" frameborder="0"></iframe>
+                </div>
+                <div class="flex p-7 flex-col prose-base lg:prose-lg self-start">
+                    <h2 class="font-bold">Naša vizija</h2>
+                    <p class="font-secondary">Stremimo k temu, da postanemo vodilno razvojno podjetje z odprtokodnimi tehnologijami v Sloveniji ter poskrbimo za razvoj največjih spletnih mest globalno znanih podjetij in organizacij.</p>
+                    <p class="font-secondary">Tako skupaj z agencijami s celega sveta naša ekipa razvija spletne rešitve za podjetja, kot so Nestlé, Marvel, Qatar Airways, Addiko Bank, Radio France in UNESCO. Do danes ima ekipa za sabo več kot 200 uspešnih projektov.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="bg-[#f5f5f5]">
+            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto py-32 gap-16 justify-between items-center">
+                <div class="flex flex-col py-6 items-center bg-white">
+                    <div class="flex mb-4">
+                        <img src="./src/images/greek-column.png" alt="greek-column.png" width="60" height="60">
+                    </div>
+                    <div class="flex border-b border-b-agiledrop hover:text-agiledrop">
+                        <a href="#" class="flex font-bold group">Zgodovina <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col py-6 items-center bg-white">
+                    <div class="flex mb-4">
+                        <img src="./src/images/flag.png" alt="greek-column.png" width="60" height="60">
+                    </div>
+                    <div class="flex border-b border-b-agiledrop hover:text-agiledrop">
+                        <a href="#" class="flex font-bold group">Vodstvo <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col py-6 items-center bg-white">
+                    <div class="flex mb-4">
+                        <img src="./src/images/team.png" alt="greek-column.png" width="60" height="60">
+                    </div>
+                    <div class="flex border-b border-b-agiledrop hover:text-agiledrop">
+                        <a href="#" class="flex font-bold group">Ekipa <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col py-6 items-center bg-white">
+                    <div class="flex mb-4">
+                        <img src="./src/images/hiring.png" alt="greek-column.png" width="60" height="60">
+                    </div>
+                    <div class="flex border-b border-b-agiledrop hover:text-agiledrop">
+                        <a href="#" class="flex font-bold group">Zaposlimo <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Two Columns Content -->
+        <div>
+            <div class="container mx-auto p-24 text-center font-bold prose-base lg:prose-lg">
+                <h2>Naše vrednote</h2>
+            </div>
+            <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-32 px-8 md:p-8 gap-8 items-center">
+                <div class="flex justify-center pb-2">
+                    <img src="./src/images/coding.jpg" alt="coding.jpg">
+                </div>
+                <div class="prose-base lg:prose-lg pb-2">
+                    <h2 class="font-bold">Profesionalno delovno okolje brez stresa</h2>
+                    <p class="font-secondary">V podjetju vladata spoštovanje in pozitivni medsebojni odnosi. Konflikte rešujemo sproti in mirno. 
+                        V našem podjetju se z naročniki dogovorimo, da je razvijalec na voljo 7 ur na dan. Naš namen ni, 
+                        da razvijalec živi za delo, temveč, da vzpostavi ravnovesje med delom in zasebnim življenjem, 
+                        da popoldneve preživlja s svojo družino in prijatelji. Njihov zasebni čas cenimo, zato jih v nadure ne silimo,
+                        ampak v kolikor se z njimi, ob nujnih situacijah, strinjajo, jim jih tudi pošteno plačamo.</p>
+                </div>
+            </div>
+
+            <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-32 px-8 md:p-8 gap-8 items-center">
+                <div class="order-last md:order-none prose-base lg:prose-lg pb-2">
+                    <h2 class="font-bold">Doslednost in točnost pri opravljanju dela</h2>
+                    <p class="font-secondary">Pri delu uporabljamo izključno dobre prakse razvoja. Svojo kodo vedno argumentiramo, 
+                        zato da si drugi lahko takoj odgovorijo na vprašanji Kaj in Zakaj. Svojo kodo vedno testiramo, 
+                        predno jo damo drugim v uporabo. Naš odnos do dela je profesionalen, redno in točno se udeležujemo sestankov, 
+                        na katere se tudi predhodno pripravimo. Zagovarjamo kakovostne storitve, zato vedno opozorimo na napake svojih 
+                        sodelavcev in naročnikov.</p>
+                </div>
+                <div class="flex justify-center pb-2">
+                    <img src="./src/images/coding-apple.jpg" alt="coding-apple.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-32 px-8 md:p-8 gap-8 items-center">
+            <div class="flex justify-center pb-2">
+                <img src="./src/images/pointing.jpg" alt="pointing.jpg">
+            </div>
+            <div class="prose-base lg:prose-lg pb-2">
+                <h2 class="font-bold">Priznavanje in nagrajevanje za dobro delo</h2>
+                <p class="font-secondary">Z veseljem nagradimo kogarkoli, ki se nadpovprečno izkaže na projektih, 
+                    pokaže zagriženost za delo ali v delo vloži dodatno uro svojega časa. 
+                    Opazimo vsak dodatni trud, nagrado pa z veseljem podelimo razvijalcem za vsak članek, 
+                    ki ga napišejo ali Agile talk, interno predavanje za sodelavce, ki ga pripravijo, 
+                    če to seveda želijo. Vsakomesečno najbolj izstopajoči razvijalci dobijo priznanje za svoje delo.</p>
+            </div>
+        </div>
+
+        <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto pb-32 px-8 md:p-8 gap-8 items-center">
+            <div class="order-last md:order-none prose-base lg:prose-lg pb-2">
+                <h2 class="font-bold">Spodbujanje profesionalne rasti posameznika</h2>
+                <p class="font-secondary">Kot IT podjetje se zavedamo, da se naša stroka hitro razvija in spreminja, 
+                    zato skrbimo, da nam nova znanja, tako podjetju kot zaposlenim, ne uidejo. 
+                    Zavoljo tega povprašamo svoje zaposlene, česa bi se radi naučili v naslednjih mesecih, 
+                    to pa jim poskusimo tudi omogočiti. Dodeljujemo jim vedno bolj kompleksne in zahtevne projekte, 
+                    ki jih z mentorjem ob strani uspešno zaključujejo. Z znanjem pa seveda pridejo nove odgovornost, 
+                    s tem pa tudi napredovanja.</p>
+            </div>
+            <div class="flex justify-center pb-2">
+                <img src="./src/images/meeting.jpg" alt="meeting.jpg">
+            </div>
+        </div>
+
+        <!-- Personal Values Content-->
+        <div class="bg-[#f5f5f5]">
+            <div class="flex flex-col container mx-auto w-3/4 py-32 prose-base lg:prose-lg text-center">
+                <h2 class="font-bold">Kaj pomenijo naše vrednote za našo ekipo?</h2>
+                <p class="text-xl font-secondary">Prav naše vrednote so tisto, na čemer temelji naša kultura dela in po čemer izstopamo. 
+                    Dobro se zavedamo, da je lažje in bolj izpolnjujoče delati v spodbudnih pogojih, 
+                    in zato naši ekipi poleg osnovnih nudimo tudi številne dodatne ugodnosti. 
+                    Tako krepimo že tako odličen ekipni duh, zaradi motiviranih zaposlenih pa lahko tudi 
+                    našim strankam omogočamo storitve najvišje kakovosti.</p>
+                <div class="flex justify-center hover:text-agiledrop">
+                    <a href="#" class="flex border-b border-b-agiledrop font-bold group">Ugodnosti dela pri Agiledropu <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                </div>        
+            </div>
+        </div>
+
+        <!-- Coding Cards -->
+        <div class="bg-[#f5f5f5]">
+            <div class="flex flex-col pb-16 container mx-auto prose-base lg:prose-lg">    
+                <div class="font-bold text-center">
+                    <h2>Zaposlimo razvijalce</h2>
+                </div>
+
+                <div class="container grid grid-cols-1 md:grid-cols-3 mx-auto gap-6 lg:gap-x-12 pt-12">
+                    <div class="flex flex-col prose-sm lg:prose-base p-12 border shadow-xl bg-white">
+                        <div>
+                            <div class="w-16 h-16">
+                                <img src="./src/images/php-logo.svg" alt="php-logo.svg">
+                            </div>
+                            <h3 class="font-bold">PHP razvijalec</h3>
+                            <p class="font-secondary">Imaš izkušnje z razvojem spletnih mest v PHP-ju? 
+                                Pridruži se nam in razvijaj kompleksne back-end rešitve 
+                                za naše naročnike s celega sveta.</p>
+                        </div>
+                        <div class="flex hover:text-agiledrop">
+                            <a href="#" class="flex border-b border-b-agiledrop font-semibold group">Prijava <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col prose-sm lg:prose-base p-12 border shadow-xl bg-white">
+                        <div>
+                            <div class="w-16 h-16">
+                                <img src="./src/images/other-html-5-icon.png" alt="other-html-5-icon.png">
+                            </div>
+                            <h3 class="font-bold">HTML+CSS razvijalec</h3>
+                            <p class="font-secondary">Obvladaš razvoj spletnih mest v HTML-ju in CSS-ju ter iščeš nove izzive? 
+                                Pridruži se naši super ekipi in nadgradi svojo front-end kariero.</p>
+                        </div>
+                        <div class="flex hover:text-agiledrop">
+                            <a href="#" class="flex border-b border-b-agiledrop font-semibold group">Prijava <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col prose-sm lg:prose-base p-12 border shadow-xl bg-white">
+                        <div>
+                            <div class="w-16 h-16">
+                                <img src="./src/images/JavascriptLogo.svg" alt="JavascriptLogo.svg">
+                            </div>
+                            <h3 class="font-bold">JavaScript razvijalec</h3>
+                            <p class="font-secondary">Dobro poznaš sodobne JavaScript knjižnice? Postani del ekipe JavaScript razvijalcev, 
+                                ki delajo na projektih za vodilne globalne blagovne znamke.</p>
+                        </div>
+                        <div class="flex hover:text-agiledrop">
+                            <a href="#" class="flex border-b border-b-agiledrop font-semibold group">Prijava <i class="fa-solid fa-right-long self-center ml-2 group-hover:translate-x-1 ease-out duration-200"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pt-16">
+        <div class="flex">
+            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto gap-y-12">
+                <div class="flex flex-col items-center lg:items-start space-y-2 font-secondary">
+                    <h2 class="text-xl font-bold mb-4">O podjetju</h2>                    
+                    <p>Sedež podjetja v Ljubljani</p>
+                    <p>Stegne 11a, 1000 Ljubljana</p>
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Več o sedežu podjetja v Ljubljani</a>
+                    <div> 
+                        <img src="./src/images/aaa-gold-si_0.svg" alt="aaa" class="self-start w-28">
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center lg:items-start space-y-2 font-secondary">
+                    <h2 class="text-xl font-bold mb-4">Pisarne</h2>                    
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Poslovna enota Celje</a>
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Poslovna enota Maribor</a>
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Poslovna enota Novo mesto</a>    
+                </div>
+
+                <div class="flex flex-col items-center lg:items-start space-y-2 font-secondary">
+                    <h2 class="text-xl font-bold mb-4">Skupnost</h2>                    
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Drupal.si</a>
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Pravno obvestilo</a>
+                    <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">Varstvo osebnih podatkov</a>    
+                </div>
+
+                <div class="flex flex-col items-center lg:items-start space-y-2 font-secondary">
+                    <h2 class="text-xl font-bold mb-4">Kontakt</h2>                    
+                    <p>Zaposlovanje: <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">zaposlitev@agiledrop.si</a></p>
+                    <p>Prodaja: <a href="#" class="underline decoration-[#dbdfe0] underline-offset-4 text-black hover:text-agiledrop">povprasevanje@agiledrop.si</a></p>
+                    <p>Telefon: 01 88 88 136</p>
+                    <div class="flex pt-4 space-x-4 text-xl text-[#6f838a]">
+                        <a href="https://www.facebook.com/agiledrop/" target="tab"><i class="fa-brands fa-facebook-f hover:text-black"></i></a>
+                        <a href="https://www.instagram.com/agiledrop/" target="tab"><i class="fa-brands fa-instagram hover:text-black"></i></a>
+                        <a href="https://twitter.com/agiledrop" target="tab"><i class="fa-brands fa-twitter hover:text-black"></i></a>
+                        <a href="https://www.linkedin.com/showcase/agiledrop-slovenia/" target="tab"><i class="fa-brands fa-linkedin-in hover:text-black"></i></a>
+                        <a href="https://www.drupal.org/agiledrop" target="tab"><i class="fa-brands fa-drupal hover:text-black"></i></a>
+                        <a href="https://www.youtube.com/channel/UCgul9HV8famyq3AlZv1bgIg" target="tab"><i class="fa-brands fa-youtube hover:text-black"></i></a>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex justify-center mt-4 p-2 bg-[#f5f5f5]">
+            <p>&#169 Made by Mitja for <a href="https://www.agiledrop.si/" class="text-black hover:text-agiledrop">Agiledrop</a></p>
+        </div>
+    </footer>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <!-- <script src="/main.js"></script> -->
+</body>
+</html>
